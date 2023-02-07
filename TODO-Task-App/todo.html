@@ -5,26 +5,28 @@
     </head>
     <body>
         <input id="todo-title" type="text">
+        <input id="date-picker" type="date">
         <button onclick="addTodo()">Add Todo</button>
        <script>
-            let todos = ['Get groceries', 'Wash clothes', 'Read book'];
+            const todos = ['Get groceries', 'Wash clothes', 'Read book'];
            render();
 
             function addTodo(){
-                let textbox = document.getElementById('todo-title');
-                let title = textbox.value;
+                const textbox = document.getElementById('todo-title');
+                const title = textbox.value;
+                const datePicker = document.getElementById('date-picker');
                 todos.push(title);
                 render();
             }
             
             function render(){
                 todos.forEach(function (todoTitle){
-                let element = document.createElement('div');
+                const element = document.createElement('div');
             element.innerText = todoTitle;
             document.body.appendChild(element);
             });
             }
 
-                   </script> 
+        </script> 
     </body>
 </html>
