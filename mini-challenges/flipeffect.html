@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------STYLE----------->
+    <style>
+        *{
+            margin: 0; padding: 0; font-family: sans-serif; color: white;
+        }
+        body{
+            width: 100%; height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .card{
+            position: relative;
+            width:300px; height: 400px;
+            transform-style: preserve-3d;
+        }
+        .card .face{
+            position: absolute;
+            top:0; left: 0;
+            width: 100%; height: 100%;
+            transform-style: preserve-3d;
+            display: flex; justify-content: center; align-items: center;
+            transition: 2s ease-in-out;
+            backface-visibility: hidden;
+            transform: perspective(500px) rotateY(0deg);
+        }
+        .card .face.front{
+            background: #ff0;
+        }
+        .card:hover .face.front{
+            transform: perspective(500px) rotateY(180deg);
+        }
+        .card .face.back{
+            background: #3bc2ff;
+            transform: perspective(500px) rotateY(180deg);
+        }
+        .card:hover .face.back{
+            transform: perspective(500px) rotateY(360deg);
+        }
+        .card .face h1{
+            font-size: 4em;
+            text-transform: uppercase;
+            transform: perspective(500px) translateZ(50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class=" face front">
+            <h1>FRONT</h1>
+        </div>
+        <div class="face back">
+            <h1>BACK</h1>
+        </div>
+    </div>
+</body>
+</html>
