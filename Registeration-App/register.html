@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+ 
+
+    <h1>Hi!!! Newbies</h1>
+    <br> 
+    <div class="process-wrapper">
+    <div id="progress-bar-container">
+        <ul>
+            <li class="step step01 active"><div class="step-inner">INTRODUCTION</div></li>
+            <li class="step step02"><div class="step-inner">CONTACT INFORMATION</div></li>
+            <li class="step step03"><div class="step-inner">INTENT</div></li>
+            <li class="step step04"><div class="step-inner">NOTE</div></li>
+            <li class="step step05"><div class="step-inner">WELCOME</div></li>
+        </ul>
+        
+        <div id="line">
+            <div id="line-progress"></div>
+        </div>
+    </div>
+    
+    <div id="progress-content-section">
+        <div class="section-content discovery active">
+            <h2>PLEASE INTRODUCE YOURSELF</h2>
+            <input type="text" name="fname" class="fname" placeholder="First Name">
+            <input type="text" name="mname" class="mname" placeholder="Middle Name">
+            <input type="text" name="lname" class="lname" placeholder="Last Name">
+            <p class="result"></p>
+        </div>
+        
+        <div class="section-content strategy">
+            <h2>HOW CAN WE REACH OUT TO YOU</h2>
+            <input type="text" class="pno" placeholder="Enter your Phone Number">
+            <input type="text" class="email" placeholder="Enter your Email Id">
+            <p class="verify"></p>
+            <p>Your Phone number is verified.</p>
+        </div>
+        
+        <div class="section-content creative">
+            <h2>CAN YOU TELL US THE PURPOSE OF YOUR VISIT</h2>
+            <textarea rows="4" cols="50" placeholder="Feel free to express your cause to us" class="purpose"></textarea>   
+            <p>Thanks for choosing us :)</p>             
+        </div>
+        
+        <div class="section-content production">
+            <h2>TO NEWLY REGISTRED MEMBERS OF OUR ORGANIZATION</h2>
+            <p class="para-welcome">Your decision to join us is greatly appreciated and we are thrilled to have you on board.
+                We would like to invite you to take advantage of all that we have to offer.
+                 Our goal is to provide you with the resources you need to achieve your goals and make a positive 
+                 impact in your career.
+                Thank you for choosing us, and we look forward to getting to know you better.
+                 If you have any questions or concerns, please don't hesitate to reach out to us.
+            </p>
+            
+        </div>
+        
+        <div class="section-content analysis">
+            <h2>CLICK HERE TO REGISTER</h2>
+            <button class="btn-register">REGISTER NOW</button>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+     <script src="register.js"></script>
+    </body>
+</html>
